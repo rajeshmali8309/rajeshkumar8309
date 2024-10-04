@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link href="https://fonts.googleapis.com/css?family=josefin+sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<title>Mera Bharat - Tour packages & Trips</title>
+</head>
+<body>
+	<div class="header">
+		<nav id="navBar">
+			 <div class="logo"> <h1 class="animate__animated animate__heartBeat"><span style="color: orange;">MERA</span> <span style="color: orange;">BH</span><span style="color: white;">AR</span><span style="color: lightgreen;">AT</span></h1>
+                           <h6 style="margin-left: 40px; color: palegreen;">Tour packages & Trips</h6>
+			 </div> 
+			   <ul class="nav-links">
+				  <li><a href="new.html">HOME</a></li>
+				  <li><a href="outside.html" class="active">Travel Outside</a></li>
+				  <li><a href="package.html">Online packages</a></li>
+			   </ul>
+
+			    <div class="user-section" onclick="toggleForm('register-form')">
+                  <i class="fas fa-user user-icon"></i>
+                </div>
+
+			    <i class="fa-solid fa-bars" aria-hidden="true" onclick="togglebtn()"></i>
+		</nav>
+
+<!-------------------------------login form--------------------------- -->
+
+<div class="form-container" id="register-form">
+    <div class="close-icon" onclick="closeForm('register-form')">X</div>
+    <form action="#" method="post">
+        <h2 class="frm">Create new account</h2>
+        <label for="email">Gmail ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <button type="button" onclick="submitForm('register-form')">Register Now</button>
+
+        <p>Already have an account? <span onclick="toggleForm('login-form')">Login now</span></p>
+    </form>
+</div>
+
+<div class="form-container" id="login-form">
+    <div class="close-icon" onclick="closeForm('login-form')">X</div>
+    <form action="#" method="post">
+        <h2 class="frm">Login</h2>
+        <label for="login-email">Gmail ID:</label>
+        <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+
+        <button type="button" onclick="submitForm('login-form')">Login Now</button>
+
+        <p class="forgot-password"><span onclick="toggleForm('forgot-password-form')">Forgot Password?</span></p>
+
+        <p>Don't have an account? <span onclick="toggleForm('register-form')">Register now</span></p>
+    </form>
+</div>
+
+<div class="form-container" id="forgot-password-form">
+    <div class="close-icon" onclick="closeForm('forgot-password-form')">X</div>
+    <form action="#" method="post">
+        <h2 class="frm">Forgot Password</h2>
+        <label for="forgot-email">Gmail ID:</label>
+        <input type="email" id="forgot-email" name="forgot-email" placeholder="Enter your email" required>
+
+        <button type="button" onclick="submitForm('forgot-password-form')">Reset Password</button>
+    </form>
+</div>
+<!-----------------------------login form end--------------------------- -->
+
+
+		<div class="container">
+			<h2>World Best Tour<span style="color: orangered;"> Packages</span></h2>
+			  <div class="search-bar">
+			  	<form>
+			  		<div class="location-input">
+			  			<label>Location</label>
+			  			<input type="text" placeholder="Where are you going?">
+			  		</div>
+
+			  		<div>
+			  			<label>Check in</label>
+			  			<input type="text" placeholder="Add Date">
+			  		</div>
+
+                     <div>
+			  			<label>Check Out</label>
+			  			<input type="text" placeholder="Add Date">
+			  		</div>
+
+			  		<div>
+			  			<label>Guest</label>
+			  			<input type="text" placeholder="Add Guest">
+			  		</div>
+			  		<button type="submit"><img src="search.png"></button>
+                </form>
+			  </div>
+            </div>	
+	      </div>
+
+
+<!-----------------------------packages section start--------------------------- -->
+
+<section class="pkj" id="pkj">
+
+	<h1 class="headd">
+		<span>p</span>
+		<span>a</span>
+		<span>c</span>
+		<span>k</span>
+		<span>a</span>
+		<span>g</span>
+		<span>e</span>
+		<span>s</span>
+	</h1>
+
+     <div class="box-container">
+
+	 <div class="box">
+		<img src="taj-1.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> Tajmahal, INDIA</h3>
+		 	<p>The Taj Mahal is an ivory-white marble mausoleum on the Indian city of Agra.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $79.00 <span>$99.00</span></div>
+		 		<p>10-Days / 9-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>	
+
+	 <div class="box">
+		<img src="burj-2.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> Burj-DUBAI</h3>
+		 	<p>Burjkhalifa,Tallest building in the world.Tallest structure in the world.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $99.00 <span>$129.00</span></div>
+		 		<p>15-Days / 14-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="ice-3.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> ICELAND</h3>
+		 	<p>Iceland one of the first parliaments in the world............</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $90.00 <span>$120.00</span></div>
+		 		<p>12-Days / 11-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="paris-4.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> Eiffel-PARIS</h3>
+		 	<p>Famous Monuments. Eiffel Tower. Paris is known for its gorgeous.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $99.00 <span>$120.00</span></div>
+		 		<p>14-Days / 13-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="thai-5.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> THAILAND</h3>
+		 	<p>A historically Buddhist country, Thailand and its jungles, mountains.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $79.00 <span>$99.00</span></div>
+		 		<p>10-Days / 9-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>	
+
+	 <div class="box">
+		<img src="aus-6.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> AUSTRALIA</h3>
+		 	<p>its natural wonders, wide-open spaces, beaches, deserts.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $99.00 <span>$129.00</span></div>
+		 		<p>15-Days / 14-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="am-7.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> AMERICA</h3>
+		 	<p>The United States is by far the most famous country in the world.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $90.00 <span>$120.00</span></div>
+		 		<p>12-Days / 11-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="newyork-8.jpeg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> NEW-YORK</h3>
+		 	<p>New York is famous for its colossal skyscraper The Empire State Building.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $99.00 <span>$120.00</span></div>
+		 		<p>14-Days / 13-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+
+	 <div class="box">
+		<img src="europe9.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> EUROPE</h3>
+		 	<p>Europe Home to More than 400 unesco World Heritage Sites.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $79.00 <span>$99.00</span></div>
+		 		<p>10-Days / 9-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>	
+
+	 <div class="box">
+		<img src="africa-10.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> AFRICA</h3>
+		 	<p>It is the second largest continent of the world. ........</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $99.00 <span>$129.00</span></div>
+		 		<p>15-Days / 14-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="italy11.jpg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> ITALY</h3>
+		 	<p>The country is known for mesmerizing topography, pristine beaches.</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $90.00 <span>$120.00</span></div>
+		 		<p>12-Days / 11-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+
+	 <div class="box">
+		<img src="spain12.jpeg" alt="">
+		 <div class="content">
+		 	<h3><i class="fa-solid fa-location-dot"></i> SPAIN</h3>
+		 	<p>Spain is a storied country of vast monuments, and sophisticated cities</p>
+		 	<div class="stars">
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="fas fa-star"></i>
+		 		<i class="far fa-star"></i>
+		 	</div>	
+		 		<div class="price"> $99.00 <span>$120.00</span></div>
+		 		<p>14-Days / 13-Night</p>
+		 		<a href="" class="btnnn">book now</a>
+		  </div>
+	 </div>
+		
+  </div>
+	
+</section>
+<!-----------------------------packages section END--------------------------- -->
+
+
+<!-----------------------------services section start--------------------------- -->
+
+<section class="service" id="services">
+
+	<h1 class="headd">
+		<span>s</span>
+		<span>e</span>
+		<span>r</span>
+		<span>v</span>
+		<span>i</span>
+		<span>c</span>
+		<span>e</span>
+		<span>s</span>
+	</h1>
+
+	<div class="box-container">
+
+		<div class="box">
+			<i class="fas fa-hotel"></i>
+			<h3>AFFORDABLE HOTELS</h3>
+			<p>If you live in an affordable city, it means that rents aren't too high for most of its residents.</p>
+		</div>
+
+		<div class="box">
+			<i class="fas fa-utensils"></i>
+			<h3>FOODS & DRINKS</h3>
+			<p>food and drinks & Eating and drinking is an essential part of the daily routine.</p>
+		</div>
+		
+		<div class="box">
+			<i class="fas fa-bullhorn"></i>
+			<h3>SEFTY GUIDE</h3>
+			<p>State your general policy on health and safety at work, including your commitment to managing health and safety and your aims.</p>
+		</div>
+
+		<div class="box">
+			<i class="fas fa-globe-asia"></i>
+			<h3>AROUND THE WORLD</h3>
+			<p>The story is all about the adventures of Phileas Fogg and Jean Passerpout.</p>
+		</div>
+
+		<div class="box">
+			<i class="fas fa-plane"></i>
+			<h3>FASTEST TRAVEL</h3>
+			<p>An aeroplane is the fastest mode of transport. It covers thousands of kilometres in just a few hours. </p>
+		</div>
+
+		<div class="box">
+			<i class="fas fa-hiking"></i>
+			<h3>ADVENTURES</h3>
+			<p>An adventure is an exciting experience or undertaking that is typically bold, sometimes risky.</p>
+		</div>
+
+	</div>
+	
+</section>
+<!-----------------------------services section End--------------------------- -->
+
+<!-----------------------------footer--------------------------- -->
+<div class="footer">
+	<div class="row">
+		<div class="colm">
+			<h1 class="animate__animated animate__heartBeat"><span style="color: orange;">MERA</span> <span style="color: orange;">BH</span><span style="color: white;">AR</span><span style="color: lightgreen;">AT</span></h1>
+			<p class="colo">At Mera bharat, we’re not just a standard accommodation provider; we’re your partner in creating an exceptional stay for business professionals visiting Wolverhampton and the surrounding area.</p>
+		</div>
+		
+		<div class="colm">
+			<h3 class="cl" style="letter-spacing: 3px;">Useful links</h3>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Outside travel</a></li>
+				<li><a href="">Online packages</a></li>
+			</ul>
+		</div>
+
+		<div class="colm">
+			<h3 class="cl" style="letter-spacing: 4px;">Address</h3>
+			<p class="colo">Mandar</p>
+			<p class="colo">Reodar, Sirohi</p>
+			<p class="colo">Rajasthan, PIN 307513, India</p>
+			<p class="email-id" style="color: blue;">rajeshmali35545@gmail.com</p>
+			<h4 style="color: blue;">+91 - 8302803362</h4>
+		</div>
+
+		<div class="colm">
+			<h3 class="cl" style="letter-spacing: 7px;">Newsletter</h3>
+			<form class="ffmm">
+				<i class="far fa-envelope"></i>
+				<input type="email" placeholder="Enter your email id" required>
+				<button type="submit"><i class="fas fa-arrow-right"></i></button>
+			</form>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/profile.php?id=100057215265438&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/_rajeshmali8309?igsh=MWg0aGdpZ2xkZnhkag=="><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/rajesh-kumar-54b1612b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+				<a href="https://wa.me/qr/VSFIMGPZ6EOLH1"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+    </div>
+    <hr style="width: 100%;">
+    <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50" style="margin-top: 10px;">&copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right" style="margin-top: 10px;">
+                <p class="m-0 text-white-50">Designed by- <a href="https://www.instagram.com/_rajeshmali8309?igsh=MWg0aGdpZ2xkZnhkag==" style="letter-spacing: 4px; color: yellowgreen;">Rajesh Mali</a>
+                </p>
+            </div>
+        </div>
+</div>
+
+<script>
+	var navBar = document.getElementById("navBar");
+	function togglebtn() {
+		navBar.classList.toggle("hidemenu");
+	}
+</script>
+
+<script>
+    function toggleForm(formId) {
+        // Close other forms before opening the new one
+        closeForm('register-form');
+        closeForm('login-form');
+        closeForm('forgot-password-form');
+        document.getElementById(formId).style.display = 'block';
+    }
+
+    function closeForm(formId) {
+        document.getElementById(formId).style.display = 'none';
+    }
+
+    function submitForm(formId) {
+        // You can add your form submission logic here
+        console.log(`Form ${formId} submitted`);
+    }
+</script>
+
+
+
+</body>
+</html>

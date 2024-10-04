@@ -1,0 +1,849 @@
+/* -----------------------------heading start----------------------------- */
+
+ *{
+ 	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url('backimg3.avif');
+	background-size: cover;
+	background-position: center center;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 7%;
+}
+
+nav .logo{
+	       width: 25%;
+           text-align: left;
+           color: #ff671F;
+           font-size: 25px;
+}
+
+.nav-links li{
+	list-style: none;
+	display: inline-block;
+	margin: 10px 30px;
+}
+
+.nav-links li a{
+	text-decoration: none;
+	color: greenyellow;
+}
+
+.nav-links li a:hover{
+    color: red;
+}
+
+.container{
+	padding: 0 7%;
+}
+
+.container h2{
+	font-size: 4vw;
+	font-weight: 500;
+	color: greenyellow;
+	text-align: center;
+	padding-top: 22%;
+}
+
+.search-bar{
+	background: white;
+	width: 70%;
+	margin: 30px auto;
+	padding: 6px 10px 6px 30px;
+	border-radius: 50px;
+}
+
+.search-bar form{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.search-bar form input{
+	display: block;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+
+.search-bar form button{
+	background-size: cover;
+	background: #ff5361;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.search-bar form button img{
+	width: 35px;
+	margin-top: 5px;
+}
+
+.location-input{
+	flex: 2;
+}
+
+.search-bar form label{
+	font-weight: 800;
+}
+
+.active{
+	position: relative;
+
+}
+.active::after{
+	content: '';
+	background: greenyellow;
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -12px;
+	border-radius: 2px;
+}
+
+nav .fa-bars{
+	display: none;
+}
+
+
+/* ---user login page start---*/
+.user-section {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .user-icon {
+            font-size: 25px;
+            color: red;
+        }
+
+        .user-icon:hover{
+        	color: orange;
+        }
+
+        .form-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: yellowgreen;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .frm{
+        	text-align: center;
+        	color: red;
+        	padding-bottom: 15px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 180px;
+        }
+
+        .form-container p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .form-container span {
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+/* ---user login page end---*/
+
+/* -------------------HEADING page end---------------------------*/
+
+
+/* -----------------------------book----------------------------- */
+.head{
+	text-align: center;
+	padding: 40px;
+}
+.head span{
+	color: greenyellow;
+}
+.head h1{
+	color: black;
+}
+.booking{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.booking img{
+	width: 550px;
+	border-radius: 5px;
+}
+.form{
+	margin-inline: 28px;
+	width: 320px;
+	background-color: white;
+	padding: 22px;
+	box-shadow: 0px 4px 4px 6px rgb(230, 229, 229);
+	border-radius: 4px;
+
+}
+.form input{
+	width: 90%;
+	padding: 8px;
+	font-size: 17px;
+	margin-top: 3px;
+}
+.form p{
+	margin-top: 20px;
+	color: black;
+
+}
+.form h2{
+	color: black;
+}
+.form button{
+	width: 140px;
+	height: 40px;
+	border: 2px solid darkorange;
+	background-color: transparent;
+	font-size: 21px;
+	cursor: pointer;
+	margin-top: 10px;
+	color: black;
+}
+.form button:hover{
+	background-color: darkorange;
+	color: black;
+}
+
+
+/* -----------------------------Explore best places----------------------------- */
+.places{
+	display: grid;
+	justify-content: center;
+	width: 80%;
+	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	margin: auto;
+}
+.places .PlaceCard{
+    box-shadow: 0px 4px 4px 6px rgb(230, 229, 229);
+    height: 360px;
+    margin-top: 22px;
+    border-radius: 5px;
+    margin-inline: 22px;
+}
+.PlaceCard img{
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+}
+.PlaceCard h3{
+    margin-top: 11px;
+    margin-left: 11px; 
+    color: black;   
+}
+.PlaceCard p{
+    margin-top: 11px;
+    margin-left: 11px; 
+    color: black;   
+}
+
+.PlaceCard button{
+	width: 80px;
+	height: 25px;
+	border: 2px solid darkorange;
+	background-color: transparent;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-left: 20px;
+	color: greenyellow;
+}
+
+.PlaceCard button:hover{
+	background-color: darkorange;
+	color: black;
+}
+
+.hr1{
+	background: #999;
+	height: 2px;
+    width: 94%;
+	border: 0;
+	margin: 20px 0;
+	margin-left: 50px;
+}
+
+
+
+/* -------------------gallery------------------- */
+
+.gallery .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+	overflow: hidden;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+	border: 1rem solid white;
+	border-radius: .5rem;
+	flex: 1 1 18rem;
+	height: 25rem;
+	position: relative;
+}
+
+.gallery .box-container .box img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.gallery .box-container .box .content{
+	position: absolute;
+	top: -100%; left: 0;
+    height: 100%;
+	width: 100%;
+	text-align: center;
+	background: rgba(0, 0, 0, .7);
+	padding: 2rem;
+	padding-top: 5rem;
+}
+
+.gallery .box-container .box .content h3{
+	font-size: 2rem;
+	color: orange;
+}
+
+.gallery .box-container .box .content p{
+	font-size: 1.5rem;
+	color: #eee;
+	padding: .5rem 0;
+}
+
+.gallery .box-container .box:hover .content{
+	top: 0;
+}
+
+.btnnnn{
+	width: 80px;
+	height: 28px;
+	font-size: 16px;
+	margin-top: 22px;
+	text-align: center;
+	color: orange;
+}
+
+.btnnnn:hover{
+	color: lightblue;
+}
+
+
+/* -------------------About msg and contact------------------- */
+.about-msg{
+	text-align: center;
+	margin: 80px 0;
+	color: #333;
+	font-size: 17px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+.about-msg h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: red;
+}
+
+
+.contact{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.contact img{
+	width: 500px;
+}
+.contactForm{
+	width: 300px;
+	height: 230px;
+	background-color: white;
+	box-shadow: 0px 4px 4px 6px rgb(231, 229, 229);
+	padding: 52px;
+	margin-left: 20px;
+}
+.contactForm input{
+	width: 90%;
+	padding: 6px;
+	font-size: 16px;
+	margin-top: 3px;
+}
+.contactForm p{
+	margin-top: 13px;
+	color: black	;
+}
+.contactForm button{
+	width: 80px;
+	height: 28px;
+	background-color: darkorange;
+	color: white;
+	font-size: 16px;
+	margin-top: 22px;
+	border: none;
+}
+
+
+/* -------------------footer------------------- */
+
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: black;
+	color: white;
+	padding: 66px;
+	margin-top: 55px;
+}
+
+.row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-left: 0px;
+}
+
+.colm{
+	flex-basis: 25%;
+	padding: 4px;
+}
+
+.colm:nth-child(2), .colm:nth-child(3){
+	flex-basis: 15%;
+}
+
+.logo{
+	width: 250px;
+	margin-bottom: 30px;
+	color: greenyellow;
+}
+
+.colo{
+	color: darkgreen;
+	align-items: center;
+}
+
+.colm h3{
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+	padding: 1px;
+}
+
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+
+.cl{
+	color: red;
+	align-items: center;
+}
+
+ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: skyblue;
+}
+
+ul li a:hover{
+	color: greenyellow;
+}
+
+.ffmm{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+
+.far{
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.ffmm input{
+	width: 100px;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+
+.ffmm button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.ffmm button .fas{
+	font-size: 16px;
+	color: #ccc;
+}
+
+.social-icons .fab{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000;
+	background: white;
+	margin-right: 18px;
+	cursor: pointer;
+	
+}
+
+.social-icons .fab:hover{
+	color: blue;
+	background-color: greenyellow;
+}
+
+@media (max-width: 700px){
+	.footer{
+		bottom: unset;
+	}
+
+	.colm{
+	flex-basis: 100%;
+    }
+
+    .colm:nth-child(2), .colm:nth-child(3){
+	flex-basis: 100%;
+    }
+}
+
+/* -------------------Responsive(for small screen)------------------- */
+
+@media only screen and (max-width: 700px){
+
+           .logo{
+           	position: fixed;
+           	top: 0;
+           	left: 5%;
+           }
+
+           .logo h6{
+           	display: none;
+           }
+
+           nav{
+           	position: fixed;
+           	top: 0;
+           	z-index: 100;
+           	display: inline-block;
+           	width: 100%;
+           	padding: 100px 7% 0;
+           	background: #000;
+           	text-align: right;
+           	max-height: 100px;
+           	overflow: hidden;
+           	transition: max-height 0.5s;
+           }
+           nav .nav-links li{
+           	margin: 10px 0;
+           	display: block;
+           }
+
+           .register-btn{
+           	margin: 15px 0 30px;
+           	display: inline-block;
+           }
+
+           nav .fa-bars{
+	        display: block;
+	        position: fixed;
+	        top: 4%;
+	        right: 7%;
+	        color: white;
+	        font-size: 28px;
+	        cursor: pointer;
+	
+           }
+
+          .active::after{
+	        left: -40px;
+	        transform: translate(0, 50%);
+	        bottom: 50%;
+          }
+
+          .hidemenu{
+          	max-height: 300px;
+          }
+
+          .header h2{
+          	padding-top: 200px;
+          	font-size: 7vw;
+          }
+
+          .search-bar{
+          	width: 90%;
+          	margin: 30px auto;
+          	padding: 20px 10px 30px;
+          	border-radius: 5px;
+          	position: relative;
+          }
+
+          .search-bar form{
+                display: block;
+          }
+
+          .search-bar form input{
+          	border-bottom: 1px solid #darkgoldenrod;
+          	width: 100%;
+          	margin-bottom: 20px;
+          	margin-top: 10px;
+          	padding-bottom: 10px;
+          }
+          .search-bar form button{
+          	position: absolute;
+          	bottom: 0;
+          	left: 50%;
+          	transform: translate(-50%, 50%);
+          }
+
+          .heading{
+          	font-size: 6vw;
+          }
+
+          .cta{
+          	padding: 50% 5%;
+
+          }
+          .top-content{
+          	background-color:lightgray;
+	        width: 110%;
+	        height: 60px;
+	        display: flex;
+	        align-items: center;
+	        border-radius: 5px;
+	        box-shadow: 3px 3px 5px gray;
+          	margin-left: 5px;
+          	margin-right: 5px;
+          }
+
+          .cta h7{
+          	font-size: 7vw;
+          	line-height: 8vw;
+          }
+          .cta p{
+          	font-size: 14px;
+          }
+
+          .sub-title{
+          	font-size: 6vw;
+          }
+
+}
+
+
+/* -------------------outside packages page------------------- */
+/* ---packages start--- */
+
+.headd{
+	text-align: center;
+	padding: 3.5rem;
+}
+
+.headd span{
+	font-size: 2.5rem;
+	background: rgba(255, 165, 0, .2);
+	color: var(--orange);
+	border-radius: .5rem;
+	padding: .2rem 1rem;
+	display: inline-block;
+}
+
+.box-container{
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.pkj .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.pkj .box-container .box{
+	flex: 1 1 17rem;
+	border-radius: .5rem;
+	overflow: hidden;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.pkj .box-container .box img{
+	height: 18rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.pkj .box-container .box .content{
+    padding: 2rem;
+}
+
+.pkj .box-container .box .content h3{
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.pkj .box-container .box .content h3 i{
+	color: red;
+}
+
+.pkj .box-container .box .content p{
+	font-size: 1.2rem;
+	color: #666;
+	padding: 1rem 0;
+}
+
+.pkj .box-container .box .content .stars i{
+	font-size: 1rem;
+	color: red;
+}
+
+.pkj .box-container .box .content .price{
+	font-size: 1rem;
+	color: red;
+	padding-top: 1.5rem;
+}
+
+.pkj .box-container .box .content .price span{
+	font-size: 1rem;
+	color: #666;
+	text-decoration: line-through;
+}
+
+.btnnn{
+	width: 100px;
+	height: 30px;
+	background-color: transparent;
+	font-size: 17px;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-left: 20px;
+	color: red;
+}
+
+.btnnn:hover{
+	font-size: 19px;
+	color: lightblue;
+	position: absolute;
+}
+
+/* ---packages end--- */
+
+
+
+/* ---services start--- */
+.service .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5rem;
+}
+
+.service .box-container .box{
+	flex: 1 1 20rem;
+	border-radius: .5rem;
+	padding: 1rem;
+}
+
+.service .box-container .box i{
+	padding: 1rem;
+	font-size: 5rem;
+	color: orange;
+	margin-left: 120px;
+}
+
+.service .box-container .box h3{
+	font-size: 1.5rem;
+	color: #666;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.service .box-container .box p{
+	text-align: center;
+}
+
+.service .box-container .box:hover{
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}

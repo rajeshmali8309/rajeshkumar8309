@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link href="https://fonts.googleapis.com/css?family=josefin+sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<title>Mera Bharat - Tour packages & Trips</title>
+</head>
+<body>
+	<div class="header">
+		<nav id="navBar">
+			 <div class="logo"> <h1 class="animate__animated animate__heartBeat"><span style="color: orange;">MERA</span> <span style="color: orange;">BH</span><span style="color: white;">AR</span><span style="color: lightgreen;">AT</span></h1>
+                           <h6 style="margin-left: 40px; color: palegreen;">Tour packages & Trips</h6>
+			 </div> 
+			   <ul class="nav-links">
+				  <li><a href="new.html">HOME</a></li>
+				  <li><a href="outside.html">Travel Outside</a></li>
+				  <li><a href="package.html" class="active">Online packages</a></li>
+			   </ul>
+
+			     <div class="user-section" onclick="toggleForm('register-form')">
+                  <i class="fas fa-user user-icon"></i>
+                </div>
+
+			    <i class="fa-solid fa-bars" aria-hidden="true" onclick="togglebtn()"></i>
+		</nav>
+
+<!--------------------------------login form--------------------------- -->
+
+<div class="form-container" id="register-form">
+    <div class="close-icon" onclick="closeForm('register-form')">X</div>
+    <form action="#" method="post">
+        <h2 class="frm">Create new account</h2>
+        <label for="email">Gmail ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+        <button type="button" onclick="submitForm('register-form')">Register Now</button>
+
+        <p>Already have an account? <span onclick="toggleForm('login-form')">Login now</span></p>
+    </form>
+</div>
+
+<div class="form-container" id="login-form">
+    <div class="close-icon" onclick="closeForm('login-form')">X</div>
+    <form action="#" method="post">
+        <h2 class="frm">Login</h2>
+        <label for="login-email">Gmail ID:</label>
+        <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+
+        <button type="button" onclick="submitForm('login-form')">Login Now</button>
+
+        <p class="forgot-password"><span onclick="toggleForm('forgot-password-form')">Forgot Password?</span></p>
+
+        <p>Don't have an account? <span onclick="toggleForm('register-form')">Register now</span></p>
+    </form>
+</div>
+
+<div class="form-container" id="forgot-password-form">
+    <div class="close-icon" onclick="closeForm('forgot-password-form')">X</div>
+    <form action="#" method="post">
+        <h2 class="frm">Forgot Password</h2>
+        <label for="forgot-email">Gmail ID:</label>
+        <input type="email" id="forgot-email" name="forgot-email" placeholder="Enter your email" required>
+
+        <button type="button" onclick="submitForm('forgot-password-form')">Reset Password</button>
+    </form>
+</div>
+<!-----------------------------login form end--------------------------- -->
+
+
+		<div class="container">
+			<h2>Find India's Tour<span style="color: orangered;"> Package</span></h2>
+			  <div class="search-bar">
+			  	<form>
+			  		<div class="location-input">
+			  			<label>Location</label>
+			  			<input type="text" placeholder="Where are you going?">
+			  		</div>
+
+			  		<div>
+			  			<label>Check in</label>
+			  			<input type="text" placeholder="Add Date">
+			  		</div>
+
+                     <div>
+			  			<label>Check Out</label>
+			  			<input type="text" placeholder="Add Date">
+			  		</div>
+
+			  		<div>
+			  			<label>Guest</label>
+			  			<input type="text" placeholder="Add Guest">
+			  		</div>
+			  		<button type="submit"><img src="search.png"></button>
+                </form>
+			  </div>
+            </div>	
+	      </div>
+
+
+<!-----------------------------Explore Top 9 Trending places page--------------------------- -->
+<div class="best" id="place">
+   	  	<div class="head">
+   	  		<h1>Explore Top 9 <span>Trending Places</span></h1>
+   	  	</div>
+   	  	<div class="places">
+   	  		<div class="PlaceCard">
+   	  			<img src="pc1.avif">
+   	  			<h3>Taj Mahal, Agra</h3>
+   	  			<p>Rs.4300 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc2.avif">
+   	  			<h3>Dudhsagar Waterfalls, Goa</h3>
+   	  			<p>Rs.4300 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc3.avif">
+   	  			<h3>Goldan Tample, Amritsar</h3>
+   	  			<p>Rs.4700 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc4.avif">
+   	  			<h3>Red Fort, Delhi</h3>
+   	  			<p>Rs.5300 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc5.avif">
+   	  			<h3>Hawa Mahal, Jaipur</h3>
+   	  			<p>Rs.5800 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc6.avif">
+   	  			<h3>Qutab Minar, Delhi</h3>
+   	  			<p>Rs.3900 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc7.avif">
+   	  			<h3>Prem Mandir, Mathura</h3>
+   	  			<p>Rs.5600 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc8.avif">
+   	  			<h3>Hidimba Devi Temple, Manali</h3>
+   	  			<p>Rs.7900 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc9.avif">
+   	  			<h3>Nubra Valley, Leh</h3>
+   	  			<p>Rs.7000 - 1 Guest /  3 Days-2 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  	</div>
+   	  </div>
+   	<hr style="width: 100%; margin-top: 20px;">
+
+
+   	  <!-----------------------------Top 6 places rajasthan page--------------------------- -->
+<div class="best" id="place">
+   	  	<div class="head">
+   	  		<h1 style="background-color: red;">Top 6 Places <span>Visit in RAJASTHAN</span></h1>
+   	  	</div>
+   	  	<div class="places">
+   	  		<div class="PlaceCard">
+   	  			<img src="mountabu.jpg">
+   	  			<h3>MountAbu, Sirohi</h3>
+   	  			<p>Rs.4300 - 1 Guest / Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="JAISALMER.jpg">
+   	  			<h3>Jaisalmer</h3>
+   	  			<p>Rs.5300 - 1 Guest /  2 Days-1 Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="nathdawara.jpg">
+   	  			<h3>Nathdawara, Rajsamand</h3>
+   	  			<p>Rs.3200 - 1 Guest / Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="pc5.avif">
+   	  			<h3>Hawa Mahal, Jaipur</h3>
+   	  			<p>Rs.4100 - 1 Guest / Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="udaipur.jpg">
+   	  			<h3>Pichola lake, Udaipur</h3>
+   	  			<p>Rs.4000 - 1 Guest / Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  		<div class="PlaceCard">
+   	  			<img src="haldighati.jpg">
+   	  			<h3>Haldighati, Rajsamand</h3>
+   	  			<p>Rs.3900 - 1 Guest / Night</p>
+   	  			<button>book now</button>
+   	  		</div>
+   	  	</div>
+   	  </div>
+
+ <div style="margin-top: 50px; margin-left: 600px;">
+   	  <ul class="nav-links">
+		 <li><a href="new.html" style=" font-size: 20px; color: blue;">GO to Home >></a></li>
+	  </ul>
+</div>
+   	 
+<!-----------------------------footer--------------------------- -->
+<div class="footer">
+	<div class="row">
+		<div class="colm">
+			<h1 class="animate__animated animate__heartBeat"><span style="color: orange;">MERA</span> <span style="color: orange;">BH</span><span style="color: white;">AR</span><span style="color: lightgreen;">AT</span></h1>
+			<p class="colo">At Mera bharat, we’re not just a standard accommodation provider; we’re your partner in creating an exceptional stay for business professionals visiting Wolverhampton and the surrounding area.</p>
+		</div>
+		
+		<div class="colm">
+			<h3 class="cl" style="letter-spacing: 3px;">Useful links</h3>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Outside travel</a></li>
+				<li><a href="">Online packages</a></li>
+			</ul>
+		</div>
+
+		<div class="colm">
+			<h3 class="cl" style="letter-spacing: 4px;">Address</h3>
+			<p class="colo">Mandar</p>
+			<p class="colo">Reodar, Sirohi</p>
+			<p class="colo">Rajasthan, PIN 307513, India</p>
+			<p class="email-id" style="color: blue;">rajeshmali35545@gmail.com</p>
+			<h4 style="color: blue;">+91 - 8302803362</h4>
+		</div>
+
+		<div class="colm">
+			<h3 class="cl" style="letter-spacing: 7px;">Newsletter</h3>
+			<form class="ffmm">
+				<i class="far fa-envelope"></i>
+				<input type="email" placeholder="Enter your email id" required>
+				<button type="submit"><i class="fas fa-arrow-right"></i></button>
+			</form>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/profile.php?id=100057215265438&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/_rajeshmali8309?igsh=MWg0aGdpZ2xkZnhkag=="><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/rajesh-kumar-54b1612b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+				<a href="https://wa.me/qr/VSFIMGPZ6EOLH1"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+    </div>
+    <hr style="width: 100%;">
+    <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50" style="margin-top: 10px;">&copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right" style="margin-top: 10px;">
+                <p class="m-0 text-white-50">Designed by- <a href="https://www.instagram.com/_rajeshmali8309?igsh=MWg0aGdpZ2xkZnhkag==" style="letter-spacing: 4px; color: yellowgreen;">Rajesh Mali</a>
+                </p>
+            </div>
+        </div>
+</div>
+
+<script>
+	var navBar = document.getElementById("navBar");
+	function togglebtn() {
+		navBar.classList.toggle("hidemenu");
+	}
+</script>
+
+
+<script>
+    function toggleForm(formId) {
+        // Close other forms before opening the new one
+        closeForm('register-form');
+        closeForm('login-form');
+        closeForm('forgot-password-form');
+        document.getElementById(formId).style.display = 'block';
+    }
+
+    function closeForm(formId) {
+        document.getElementById(formId).style.display = 'none';
+    }
+
+    function submitForm(formId) {
+        // You can add your form submission logic here
+        console.log(`Form ${formId} submitted`);
+    }
+</script>
+
+
+</body>
+</html>
